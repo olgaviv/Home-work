@@ -22,6 +22,8 @@ Console.WriteLine($"Two digital of a number {n} is {result}");
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
+/*
+
 int Dif (int n)
 {
         while (n>=999)
@@ -50,5 +52,36 @@ int Resultat = Dif (number);
 
 Console.WriteLine($"Третья цифра в числе {number}  будет {Resultat}");
 
+*/
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+bool Week(int number)
+{
+    
+    if (number==1)
+    {
+        return true;
+    }
+    else
+    {
+       return false;
+    }
+
+}
+
+Console.WriteLine("Input number of week");
+int day = Convert.ToInt32(Console.ReadLine());
+
+int [] Array = {0,0,0,0,0,1,1};
+bool Res = Week(Array [day-1]);
+if (Res==false)
+{
+    Console.WriteLine($"День недели под номером {day} не является выходным");
+}
+else 
+{
+    Console.WriteLine($"День недели под номером {day} является выходным");
+}
 
 
